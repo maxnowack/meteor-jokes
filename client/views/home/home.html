@@ -1,0 +1,16 @@
+<template name="Home">
+  <div class="joke">
+    {{text}}
+    <span class="date">{{createdAt}}</span>
+  </div>
+  <button type="button" class="next">Next Joke</button>
+  <div class="new">
+    {{#autoForm id="insertNewJoke" collection="Jokes" type="insert"}}
+      {{> afFieldInput name="text"}}
+      <div class="form-group">
+        <button type="submit" class="btn btn-primary">Add Joke</button>
+        <button type="reset" class="btn btn-default">Reset Form</button>
+      </div>
+    {{/autoForm}}
+  </div>
+</template>

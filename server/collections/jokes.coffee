@@ -1,0 +1,3 @@
+Jokes.allow
+  insert: ->
+    true
